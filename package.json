@@ -6,7 +6,7 @@
   "types": "build/index.d.ts",
   "publishConfig": {
     "access": "restricted",
-    "registry": "https://npm.pkg.github.com/@vietaapp"
+    "registry": "https://npm.pkg.github.com/"
   },
   "files": [
     "build"
@@ -17,8 +17,6 @@
     "check": "node script/check-code-style.js",
     "login": "node script/login.js",
     "logout": "node script/logout.js",
-    "prepublishOnly": "script/publish",
-    "postpublish": "script/postpublish",
     "lint": "eslint src test --ext .ts,.tsx,.js --fix",
     "tsc:guides": "tsc --build guides/tsconfig.json",
     "tsc:src": "tsc --build tsconfig.json",
@@ -82,7 +80,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/aws/amazon-chime-sdk-js"
+    "url": "git://github.com/vietaapp/amazon-chime-sdk-js"
   },
   "nyc": {
     "include": [
