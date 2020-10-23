@@ -161,7 +161,7 @@ export default interface RealtimeController {
   /**
    * Unsubscribes to volume indicator changes for a specific attendee id.
    */
-  realtimeUnsubscribeFromVolumeIndicator(attendeeId: string): void;
+  realtimeUnsubscribeFromVolumeIndicator(attendeeId: string, callback?: () => void): void;
 
   /**
    * Computes the difference to the last state and sends a volume indicator
