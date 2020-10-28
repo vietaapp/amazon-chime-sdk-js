@@ -268,7 +268,7 @@ export default class DefaultRealtimeController implements RealtimeController {
         return delete this.state.volumeIndicatorCallbacks[attendeeId];
       }
 
-      const callbacks = this.state.volumeIndicatorCallbacks[attendeeId];
+      const callbacks = this.state.volumeIndicatorCallbacks[attendeeId] || [];
       this.state.volumeIndicatorCallbacks[attendeeId] = callbacks.filter(cb => cb !== callback);
     });
   }
